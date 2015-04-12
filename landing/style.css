@@ -1,0 +1,56 @@
+*{margin: 0;
+padding:0;}
+label{
+	display: inline-block;
+
+
+}
+p{
+	display: inline-block;
+	display: none;
+
+}
+#bigbox{
+	margin:100px 200px 100px 400px;
+	padding:35px 25px;
+	width:700px;
+	height:300px;
+	border:1px solid black;
+}
+div{
+	padding-bottom: 0;
+}
+#small{
+	padding:0;
+}
+#divname{
+	margin-top: 6px;
+	margin-bottom:24px;
+}
+input.text{
+	width:180px;
+	height:25px;
+	margin-right: 10px;
+	margin-bottom: -5px;
+}
+input.password{
+	width:180px;
+	height:25px;
+	margin-right: 10px;
+}
+input.submitBtn{
+	width:135px;
+	height:33px;
+	background: url(land.png);
+	/*color: #fff;*/
+	margin:20px 0 0 80px;
+	font-size: 18px;
+}
+#count{
+	font-size:15px;
+	margin-top: 5px;
+	visibility:hidden;
+}
+span{
+	font-size: 20px
+}

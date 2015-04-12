@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>柱状图</title>
+<style rel="stylesheet" type="text/css">
+#bigBox{
+	border:1px solid black;
+	width:800px;
+	height:550px;
+	margin: 50px auto;
+}
+
+</style>
+<script type="text/javascript">
+window.onload = function(){
+	var canvas=document.getElementById("canvas");
+	var context=canvas.getContext("2d");
+	context.beginPath();
+	context.strokeStyle="black";
+	context.lineWidth=2;
+	context.moveTo(100,500);
+	context.lineTo(700,500);
+	context.moveTo(690,490);
+	context.lineTo(700,500);
+	context.moveTo(690,510);
+	context.lineTo(700,500);
+	context.moveTo(100,500);
+	context.lineTo(100,50);
+	context.moveTo(90,60);
+	context.lineTo(100,50);
+	context.moveTo(100,50);
+	context.lineTo(110,60);
+	context.stroke();
+	context.closePath();
+	context.font = "bold 24px Arial";
+	context.textAlign="right";
+	context.fillText("Y",90,55);
+	context.fillText("X",720,515);
+	context.fillStyle="rgba(0,0,255,0.5)";
+	context.fillRect(110,110,50,389);
+	context.fillStyle="blue";
+	context.fillRect(200,140,50,359);
+	context.fillStyle="green";
+	context.fillRect(290,90,50,409);
+	context.fillStyle="red";
+	context.fillRect(380,200,50,299);
+	context.fillStyle="gray";
+	context.fillRect(470,170,50,329);
+	context.fillStyle="yellow";
+	context.fillRect(560,150,50,349);
+	context.fillStyle="pink";
+	context.fillRect(630,100,50,399);
+}
+
+</script>
+</head>
+<body>
+<div id="bigBox">
+<canvas id="canvas" width="800" height="550">请更换浏览器重试！</canvas>
+</div>
+</body>
+</html>

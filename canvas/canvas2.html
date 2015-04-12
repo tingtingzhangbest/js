@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>折线图</title>
+<style rel="stylesheet" type="text/css">
+#bigBox{
+	border:1px solid black;
+	width:800px;
+	height:550px;
+	margin: 50px auto;
+}
+
+</style>
+<script type="text/javascript">
+window.onload = function(){
+	var canvas=document.getElementById("canvas");
+	var context=canvas.getContext("2d");
+	context.beginPath();
+	context.strokeStyle="black";
+	context.lineWidth=2;
+	context.moveTo(100,500);
+	context.lineTo(700,500);
+	context.moveTo(690,490);
+	context.lineTo(700,500);
+	context.moveTo(690,510);
+	context.lineTo(700,500);
+	context.moveTo(100,500);
+	context.lineTo(100,50);
+	context.moveTo(90,60);
+	context.lineTo(100,50);
+	context.moveTo(100,50);
+	context.lineTo(110,60);
+	context.stroke();
+	context.closePath();
+	context.font = "bold 24px Arial";
+	context.textAlign="right";
+	context.fillText("Y",90,55);
+	context.fillText("X",720,515);
+	context.lineWidth=1;
+	context.moveTo(100,500);
+	context.lineTo(120,480);
+	context.lineTo(140,450);
+	context.lineTo(160,410);
+	context.lineTo(180,324);
+	context.lineTo(200,234);
+	context.lineTo(220,321);
+	context.lineTo(240,213);
+	context.lineTo(260,123);
+	context.lineTo(280,243);
+	context.lineTo(300,310);
+	context.lineTo(320,310);
+	context.lineTo(340,454);
+	context.lineTo(360,424);
+	context.lineTo(380,351);
+	context.lineTo(400,321);
+	context.lineTo(420,213);
+	context.lineTo(440,340);
+	context.lineTo(460,350);
+	context.lineTo(480,364);
+	context.lineTo(500,378);
+	context.lineTo(520,354);
+	context.lineTo(540,359);
+	context.lineTo(560,380);
+	context.lineTo(580,333);
+	context.lineTo(600,350);
+	context.lineTo(620,245);
+	context.lineTo(640,432);
+	context.lineTo(660,354);
+	context.lineTo(680,390);
+	context.stroke();
+}
+
+</script>
+</head>
+<body>
+<div id="bigBox">
+<canvas id="canvas" width="800" height="550">请更换浏览器重试！</canvas>
+</div>
+</body>
+</html>
